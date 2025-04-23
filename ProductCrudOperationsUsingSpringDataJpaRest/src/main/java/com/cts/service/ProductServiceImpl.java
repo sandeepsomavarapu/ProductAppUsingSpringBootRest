@@ -45,7 +45,7 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	public Product getProduct(int productId) throws ProductNotFound {
 		Optional<Product> optional = repository.findById(productId);
-		if(optional.isPresent())
+		if (optional.isPresent())
 			return optional.get();
 		else
 			throw new ProductNotFound("Product Id Is Invalid....");
@@ -58,12 +58,12 @@ public class ProductServiceImpl implements ProductService {
 
 	@Override
 	public List<Product> getAllProductsBetween(int intialPrice, int finalPrice) {
-		return repository.findByProductPriceBetween(intialPrice, finalPrice);
+		return repository.getAllProductsBetween(intialPrice, finalPrice);
 	}
 
 	@Override
 	public List<Product> getAllProductsByCategory(String category) {
-		return repository.findByProductCategory(category);
+		return repository.getAllProductsByCategory(category);
 	}
 
 }

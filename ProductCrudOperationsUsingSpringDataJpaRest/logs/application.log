@@ -1,16 +1,153 @@
-2025-04-22T01:06:30.926-07:00  WARN 19648 --- [ProductCrudOperationsUsingSpringJpa] [HikariPool-21 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-21 - Thread starvation or clock leap detected (housekeeper delta=42m8s376ms200µs699ns).
-2025-04-22T01:34:31.659-07:00  WARN 19648 --- [ProductCrudOperationsUsingSpringJpa] [HikariPool-21 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-21 - Thread starvation or clock leap detected (housekeeper delta=25m58s571ms475µs900ns).
-2025-04-22T01:51:01.467-07:00  WARN 19648 --- [ProductCrudOperationsUsingSpringJpa] [HikariPool-21 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-21 - Thread starvation or clock leap detected (housekeeper delta=3m59s589ms863µs200ns).
-2025-04-22T01:59:20.408-07:00  WARN 19648 --- [ProductCrudOperationsUsingSpringJpa] [HikariPool-21 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-21 - Thread starvation or clock leap detected (housekeeper delta=4m48s899ms643µs100ns).
-2025-04-22T02:23:07.279-07:00  WARN 19648 --- [ProductCrudOperationsUsingSpringJpa] [HikariPool-21 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-21 - Thread starvation or clock leap detected (housekeeper delta=46s536ms240µs499ns).
-2025-04-22T02:36:37.732-07:00  WARN 19648 --- [ProductCrudOperationsUsingSpringJpa] [HikariPool-21 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-21 - Thread starvation or clock leap detected (housekeeper delta=8m30s379ms728µs900ns).
-2025-04-22T03:02:12.803-07:00  WARN 19648 --- [ProductCrudOperationsUsingSpringJpa] [HikariPool-21 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-21 - Thread starvation or clock leap detected (housekeeper delta=14m34s865ms793µs500ns).
-2025-04-22T04:52:35.831-07:00  WARN 19648 --- [ProductCrudOperationsUsingSpringJpa] [HikariPool-21 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-21 - Thread starvation or clock leap detected (housekeeper delta=19m21s590ms302µs201ns).
-2025-04-22T08:42:10.107-07:00  WARN 19648 --- [ProductCrudOperationsUsingSpringJpa] [HikariPool-21 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-21 - Thread starvation or clock leap detected (housekeeper delta=3h19m34s175ms519µs).
-2025-04-22T20:43:03.111-07:00  WARN 19648 --- [ProductCrudOperationsUsingSpringJpa] [HikariPool-21 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-21 - Thread starvation or clock leap detected (housekeeper delta=12h1m4s589ms370µs900ns).
-2025-04-22T20:49:02.924-07:00  INFO 19648 --- [ProductCrudOperationsUsingSpringJpa] [RMI TCP Connection(344)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2025-04-22T20:49:02.930-07:00  INFO 19648 --- [ProductCrudOperationsUsingSpringJpa] [RMI TCP Connection(344)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-04-22T20:49:02.938-07:00  INFO 19648 --- [ProductCrudOperationsUsingSpringJpa] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-04-22T20:49:02.946-07:00  INFO 19648 --- [ProductCrudOperationsUsingSpringJpa] [RMI TCP Connection(344)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-04-22T20:49:02.947-07:00  INFO 19648 --- [ProductCrudOperationsUsingSpringJpa] [RMI TCP Connection(344)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown initiated...
-2025-04-22T20:49:02.954-07:00  INFO 19648 --- [ProductCrudOperationsUsingSpringJpa] [RMI TCP Connection(344)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown completed.
+2025-04-23T01:25:07.399-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [http-nio-1111-exec-3] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x030x010xf40x010x000x010xf00x030x03#0x93 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:409) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:270) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-04-23T07:19:40.527-07:00  WARN 7800 --- [ProductCrudOperationsUsingSpringJpa] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h56m33s898ms61µs600ns).
+2025-04-23T07:29:49.128-07:00  INFO 20104 --- [ProductCrudOperationsUsingSpringJpa] [main] OperationsUsingSpringJpaApplicationTests : Starting ProductCrudOperationsUsingSpringJpaApplicationTests using Java 21.0.6 with PID 20104 (started by 2383333 in C:\Users\2383333\git\repository\ProductCrudOperationsUsingSpringDataJpaRest)
+2025-04-23T07:29:49.131-07:00  INFO 20104 --- [ProductCrudOperationsUsingSpringJpa] [main] OperationsUsingSpringJpaApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2025-04-23T07:29:50.754-07:00  INFO 20104 --- [ProductCrudOperationsUsingSpringJpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-23T07:29:50.826-07:00  INFO 20104 --- [ProductCrudOperationsUsingSpringJpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interface.
+2025-04-23T07:29:51.815-07:00  INFO 20104 --- [ProductCrudOperationsUsingSpringJpa] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-23T07:29:51.973-07:00  INFO 20104 --- [ProductCrudOperationsUsingSpringJpa] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-23T07:29:52.048-07:00  INFO 20104 --- [ProductCrudOperationsUsingSpringJpa] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-23T07:29:52.716-07:00  INFO 20104 --- [ProductCrudOperationsUsingSpringJpa] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-23T07:29:52.761-07:00  INFO 20104 --- [ProductCrudOperationsUsingSpringJpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-23T07:29:53.263-07:00  INFO 20104 --- [ProductCrudOperationsUsingSpringJpa] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65b2ee36
+2025-04-23T07:29:53.266-07:00  INFO 20104 --- [ProductCrudOperationsUsingSpringJpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-23T07:29:53.354-07:00  WARN 20104 --- [ProductCrudOperationsUsingSpringJpa] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-23T07:29:53.390-07:00  INFO 20104 --- [ProductCrudOperationsUsingSpringJpa] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-23T07:29:54.696-07:00  INFO 20104 --- [ProductCrudOperationsUsingSpringJpa] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-23T07:29:54.769-07:00  INFO 20104 --- [ProductCrudOperationsUsingSpringJpa] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-23T07:29:55.398-07:00  INFO 20104 --- [ProductCrudOperationsUsingSpringJpa] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-23T07:29:56.473-07:00  WARN 20104 --- [ProductCrudOperationsUsingSpringJpa] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-23T07:29:58.061-07:00  INFO 20104 --- [ProductCrudOperationsUsingSpringJpa] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-04-23T07:29:58.173-07:00  INFO 20104 --- [ProductCrudOperationsUsingSpringJpa] [main] OperationsUsingSpringJpaApplicationTests : Started ProductCrudOperationsUsingSpringJpaApplicationTests in 9.651 seconds (process running for 11.901)
+2025-04-23T07:30:05.937-07:00  INFO 20104 --- [ProductCrudOperationsUsingSpringJpa] [main] com.cts.service.ProductServiceImpl       : In ProductServiceImpl saveproduct method ....
+2025-04-23T07:30:06.009-07:00  INFO 20104 --- [ProductCrudOperationsUsingSpringJpa] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-23T07:30:06.015-07:00  INFO 20104 --- [ProductCrudOperationsUsingSpringJpa] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-23T07:30:06.036-07:00  INFO 20104 --- [ProductCrudOperationsUsingSpringJpa] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-23T07:37:14.956-07:00  INFO 24960 --- [ProductCrudOperationsUsingSpringJpa] [main] OperationsUsingSpringJpaApplicationTests : Starting ProductCrudOperationsUsingSpringJpaApplicationTests using Java 21.0.6 with PID 24960 (started by 2383333 in C:\Users\2383333\git\repository\ProductCrudOperationsUsingSpringDataJpaRest)
+2025-04-23T07:37:14.959-07:00  INFO 24960 --- [ProductCrudOperationsUsingSpringJpa] [main] OperationsUsingSpringJpaApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2025-04-23T07:37:16.417-07:00  INFO 24960 --- [ProductCrudOperationsUsingSpringJpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-23T07:37:16.486-07:00  INFO 24960 --- [ProductCrudOperationsUsingSpringJpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interface.
+2025-04-23T07:37:17.304-07:00  INFO 24960 --- [ProductCrudOperationsUsingSpringJpa] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-23T07:37:17.438-07:00  INFO 24960 --- [ProductCrudOperationsUsingSpringJpa] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-23T07:37:17.504-07:00  INFO 24960 --- [ProductCrudOperationsUsingSpringJpa] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-23T07:37:17.930-07:00  INFO 24960 --- [ProductCrudOperationsUsingSpringJpa] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-23T07:37:17.961-07:00  INFO 24960 --- [ProductCrudOperationsUsingSpringJpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-23T07:37:18.400-07:00  INFO 24960 --- [ProductCrudOperationsUsingSpringJpa] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63d3c9dc
+2025-04-23T07:37:18.405-07:00  INFO 24960 --- [ProductCrudOperationsUsingSpringJpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-23T07:37:18.485-07:00  WARN 24960 --- [ProductCrudOperationsUsingSpringJpa] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-23T07:37:18.511-07:00  INFO 24960 --- [ProductCrudOperationsUsingSpringJpa] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-23T07:37:19.509-07:00  INFO 24960 --- [ProductCrudOperationsUsingSpringJpa] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-23T07:37:19.557-07:00  INFO 24960 --- [ProductCrudOperationsUsingSpringJpa] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-23T07:37:20.015-07:00  INFO 24960 --- [ProductCrudOperationsUsingSpringJpa] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-23T07:37:20.851-07:00  WARN 24960 --- [ProductCrudOperationsUsingSpringJpa] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-23T07:37:22.189-07:00  INFO 24960 --- [ProductCrudOperationsUsingSpringJpa] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-04-23T07:37:22.309-07:00  INFO 24960 --- [ProductCrudOperationsUsingSpringJpa] [main] OperationsUsingSpringJpaApplicationTests : Started ProductCrudOperationsUsingSpringJpaApplicationTests in 7.873 seconds (process running for 9.273)
+2025-04-23T07:37:24.323-07:00  INFO 24960 --- [ProductCrudOperationsUsingSpringJpa] [main] com.cts.service.ProductServiceImpl       : In ProductServiceImpl saveproduct method ....
+2025-04-23T07:37:28.130-07:00  INFO 24960 --- [ProductCrudOperationsUsingSpringJpa] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-23T07:37:28.135-07:00  INFO 24960 --- [ProductCrudOperationsUsingSpringJpa] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-23T07:37:28.159-07:00  INFO 24960 --- [ProductCrudOperationsUsingSpringJpa] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-23T07:38:24.388-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-04-23T07:38:24.416-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-23T07:38:49.869-07:00  INFO 23460 --- [ProductCrudOperationsUsingSpringJpa] [main] OperationsUsingSpringJpaApplicationTests : Starting ProductCrudOperationsUsingSpringJpaApplicationTests using Java 21.0.6 with PID 23460 (started by 2383333 in C:\Users\2383333\git\repository\ProductCrudOperationsUsingSpringDataJpaRest)
+2025-04-23T07:38:49.871-07:00  INFO 23460 --- [ProductCrudOperationsUsingSpringJpa] [main] OperationsUsingSpringJpaApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2025-04-23T07:38:51.385-07:00  INFO 23460 --- [ProductCrudOperationsUsingSpringJpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-23T07:38:51.444-07:00  INFO 23460 --- [ProductCrudOperationsUsingSpringJpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interface.
+2025-04-23T07:38:52.459-07:00  INFO 23460 --- [ProductCrudOperationsUsingSpringJpa] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-23T07:38:52.600-07:00  INFO 23460 --- [ProductCrudOperationsUsingSpringJpa] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-23T07:38:52.667-07:00  INFO 23460 --- [ProductCrudOperationsUsingSpringJpa] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-23T07:38:53.197-07:00  INFO 23460 --- [ProductCrudOperationsUsingSpringJpa] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-23T07:38:53.245-07:00  INFO 23460 --- [ProductCrudOperationsUsingSpringJpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-23T07:38:53.797-07:00  INFO 23460 --- [ProductCrudOperationsUsingSpringJpa] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63d3c9dc
+2025-04-23T07:38:53.801-07:00  INFO 23460 --- [ProductCrudOperationsUsingSpringJpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-23T07:38:53.899-07:00  WARN 23460 --- [ProductCrudOperationsUsingSpringJpa] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-23T07:38:53.942-07:00  INFO 23460 --- [ProductCrudOperationsUsingSpringJpa] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-23T07:38:54.453-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [Thread-5] o.s.c.support.DefaultLifecycleProcessor  : Shutdown phase 2147482623 ends with 1 bean still running after timeout of 30000ms: [webServerGracefulShutdown]
+2025-04-23T07:38:54.465-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown aborted with one or more requests still active
+2025-04-23T07:38:55.802-07:00  INFO 23460 --- [ProductCrudOperationsUsingSpringJpa] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-23T07:38:55.897-07:00  INFO 23460 --- [ProductCrudOperationsUsingSpringJpa] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-23T07:38:57.598-07:00  INFO 23460 --- [ProductCrudOperationsUsingSpringJpa] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-23T07:38:59.465-07:00  WARN 7800 --- [ProductCrudOperationsUsingSpringJpa] [Thread-5] org.apache.tomcat.util.net.NioEndpoint   : The executor associated with thread pool [http-nio-1111] has not fully shutdown. Some application threads may still be running.
+2025-04-23T07:38:59.514-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-23T07:38:59.571-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-23T07:38:59.612-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-23T07:38:59.913-07:00  WARN 23460 --- [ProductCrudOperationsUsingSpringJpa] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-23T07:39:02.919-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] tCrudOperationsUsingSpringJpaApplication : Starting ProductCrudOperationsUsingSpringJpaApplication using Java 21.0.6 with PID 7800 (C:\Users\2383333\git\repository\ProductCrudOperationsUsingSpringDataJpaRest\target\classes started by 2383333 in C:\Users\2383333\git\repository\ProductCrudOperationsUsingSpringDataJpaRest)
+2025-04-23T07:39:02.921-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] tCrudOperationsUsingSpringJpaApplication : No active profile set, falling back to 1 default profile: "default"
+2025-04-23T07:39:03.500-07:00  INFO 23460 --- [ProductCrudOperationsUsingSpringJpa] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-04-23T07:39:03.761-07:00  INFO 23460 --- [ProductCrudOperationsUsingSpringJpa] [main] OperationsUsingSpringJpaApplicationTests : Started ProductCrudOperationsUsingSpringJpaApplicationTests in 14.342 seconds (process running for 15.489)
+2025-04-23T07:39:04.495-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-23T07:39:04.547-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interface.
+2025-04-23T07:39:05.275-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 1111 (http)
+2025-04-23T07:39:05.283-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-23T07:39:05.283-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-23T07:39:05.356-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-23T07:39:05.356-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2427 ms
+2025-04-23T07:39:05.933-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-23T07:39:05.949-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-23T07:39:05.997-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-23T07:39:05.997-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-04-23T07:39:06.030-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70445728
+2025-04-23T07:39:06.030-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-04-23T07:39:06.038-07:00  WARN 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-23T07:39:06.038-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-23T07:39:06.242-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-23T07:39:06.267-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-23T07:39:07.299-07:00  INFO 23460 --- [ProductCrudOperationsUsingSpringJpa] [main] com.cts.service.ProductServiceImpl       : In ProductServiceImpl saveproduct method ....
+2025-04-23T07:39:07.478-07:00  INFO 23460 --- [ProductCrudOperationsUsingSpringJpa] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-23T07:39:07.486-07:00  INFO 23460 --- [ProductCrudOperationsUsingSpringJpa] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-23T07:39:07.530-07:00  INFO 23460 --- [ProductCrudOperationsUsingSpringJpa] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-23T07:39:07.559-07:00  WARN 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-23T07:39:09.145-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/cts1?createDatabaseIfNotExist=true'
+2025-04-23T07:39:09.260-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-23T07:39:09.287-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-04-23T07:39:09.400-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 1111 (http) with context path '/'
+2025-04-23T07:39:09.441-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] tCrudOperationsUsingSpringJpaApplication : Started ProductCrudOperationsUsingSpringJpaApplication in 6.994 seconds (process running for 28104.52)
+2025-04-23T07:39:09.448-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-04-23T07:41:55.324-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [RMI TCP Connection(389)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-04-23T07:41:55.326-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [RMI TCP Connection(389)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-23T07:41:55.333-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-23T07:41:55.338-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [RMI TCP Connection(389)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-23T07:41:55.339-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [RMI TCP Connection(389)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-04-23T07:41:55.347-07:00  INFO 7800 --- [ProductCrudOperationsUsingSpringJpa] [RMI TCP Connection(389)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
